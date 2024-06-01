@@ -1,0 +1,10 @@
+# test directories with data 
+test_data/
+
+# system files to ignore
+*DS_Store
+**DS_Store
+
+# just in case
+*.fasta
+**.fasta
