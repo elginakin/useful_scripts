@@ -18,7 +18,7 @@ def trim_fasta(input_file, output_file, start_position, stop_position):
             trimmed_records = []
 
             for record in records:
-                trimmed_record = record[start_position-1:stop_position]
+                trimmed_record = record[start_position:stop_position] # absolute starting position
                 trimmed_records.append(trimmed_record)
 
             with open(output_file, 'w') as out_handle:
@@ -48,7 +48,5 @@ if __name__ == "__main__":
 
     if not os.path.isfile(args.input_file):
         print(f"Error: Input file '{args.input_file}' not found.")
-    elif os.path.isfile(args.output_file):
-        print(f"Error: Output file '{args.output_file}' already exists. Please provide a different output file name.")
     else:
         trim_fasta(args.input_file, args.output_file, args.start_position, args.stop_position)
