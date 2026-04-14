@@ -4,7 +4,7 @@
 
 # This recreates your original bash workflow but with the Python script
 
-segment_snipit.py \
+flu_pipline.py \
     --input-sequences-dir data/vic \
     --nextclade-dataset-dir nextclade/flu/vic \
     --nextclade-output-dir results/nextclade \
