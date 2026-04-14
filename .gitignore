@@ -2,6 +2,9 @@
 test_data/
 scripts/8_segment_snipit/data/vic
 scripts/8_segment_snipit/figures
+scripts/8_segment_snipit/snps.csv # debug overwriting
+
+
 # system files to ignore
 *DS_Store
 **DS_Store
